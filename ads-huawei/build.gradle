@@ -1,0 +1,23 @@
+rootProject.allprojects {
+    repositories {
+        maven { url 'https://developer.huawei.com/repo/' }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+    }
+
+}
+
+dependencies {
+    api project(':ads-core')
+
+    implementation 'com.huawei.hms:ads-identifier:3.4.28.305'
+}
