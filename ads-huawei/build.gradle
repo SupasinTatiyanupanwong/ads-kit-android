@@ -10,7 +10,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 29
     }
 
@@ -19,5 +19,6 @@ android {
 dependencies {
     api project(':ads-core')
 
+    implementation 'com.huawei.hms:base:4.0.3.301'
     implementation 'com.huawei.hms:ads-identifier:3.4.28.305'
 }
