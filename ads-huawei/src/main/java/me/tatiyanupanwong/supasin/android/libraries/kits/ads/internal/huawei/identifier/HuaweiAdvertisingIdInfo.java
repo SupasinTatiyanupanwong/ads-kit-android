@@ -29,12 +29,12 @@ import static androidx.annotation.RestrictTo.Scope.LIBRARY;
 @RestrictTo(LIBRARY)
 public class HuaweiAdvertisingIdInfo implements AdvertisingIdInfo {
 
-    private final com.huawei.hms.ads.identifier.AdvertisingIdClient.Info delegate;
+    private final com.huawei.hms.ads.identifier.AdvertisingIdClient.Info mDelegate;
 
     public HuaweiAdvertisingIdInfo(@NonNull Context context)
             throws AdvertisingIdNotAvailableException {
         try {
-            delegate = com.huawei.hms.ads.identifier.AdvertisingIdClient
+            mDelegate = com.huawei.hms.ads.identifier.AdvertisingIdClient
                     .getAdvertisingIdInfo(context);
         } catch (Exception ex) {
             throw new AdvertisingIdNotAvailableException(ex);
@@ -43,18 +43,18 @@ public class HuaweiAdvertisingIdInfo implements AdvertisingIdInfo {
 
     @Override
     public String getId() {
-        return delegate.getId();
+        return mDelegate.getId();
     }
 
     @Override
     public boolean isLimitAdTrackingEnabled() {
-        return delegate.isLimitAdTrackingEnabled();
+        return mDelegate.isLimitAdTrackingEnabled();
     }
 
     @NonNull
     @Override
     public String toString() {
-        return delegate.toString();
+        return mDelegate.toString();
     }
 
 }
