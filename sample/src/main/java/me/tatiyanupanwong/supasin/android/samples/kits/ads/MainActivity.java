@@ -22,7 +22,7 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 import me.tatiyanupanwong.supasin.android.libraries.kits.ads.AdsKit;
-import me.tatiyanupanwong.supasin.android.libraries.kits.ads.model.identifier.AdvertisingIdInfo;
+import me.tatiyanupanwong.supasin.android.libraries.kits.ads.model.identifier.AdvertisingIdClient;
 import me.tatiyanupanwong.supasin.android.libraries.kits.ads.model.identifier.AdvertisingIdNotAvailableException;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,13 +31,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        final AdvertisingIdClient client = AdsKit.getAdvertisingIdClient(this);
+
+        // getAdvertisingIdInfo() must not be called on the main application thread.
         new Thread() {
             @Override
             public void run() {
                 try {
-                    AdvertisingIdInfo info =
-                            AdsKit.getAdvertisingIdClient(getBaseContext()).getAdvertisingIdInfo();
-                    Log.i("MainActivity", info.getId());
+                    Log.i("MainActivity", client.getAdvertisingIdInfo().getId());
                 } catch (AdvertisingIdNotAvailableException ex) {
                     Log.i("MainActivity", "Advertising ID is not available");
                     ex.printStackTrace();

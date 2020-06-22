@@ -23,6 +23,8 @@ import androidx.annotation.WorkerThread;
 
 /**
  * Client for retrieving Advertising ID related info (the Advertising ID and LAT setting).
+ *
+ * @since 1.0.0
  */
 public abstract class AdvertisingIdClient {
 

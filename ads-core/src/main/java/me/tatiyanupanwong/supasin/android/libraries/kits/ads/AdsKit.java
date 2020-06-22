@@ -25,6 +25,8 @@ import me.tatiyanupanwong.supasin.android.libraries.kits.ads.model.identifier.Ad
 
 /**
  * The main entry point for Ads APIs.
+ *
+ * @since 1.0.0
  */
 public final class AdsKit {
 

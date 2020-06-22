@@ -18,6 +18,8 @@ package me.tatiyanupanwong.supasin.android.libraries.kits.ads.model.identifier;
 
 /**
  * Indicates an Advertising ID is not available.
+ *
+ * @since 1.0.0
  */
 public class AdvertisingIdNotAvailableException extends Exception {
 

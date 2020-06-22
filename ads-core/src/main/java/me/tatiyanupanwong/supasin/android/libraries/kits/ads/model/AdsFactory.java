@@ -19,9 +19,13 @@ package me.tatiyanupanwong.supasin.android.libraries.kits.ads.model;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
 
 import me.tatiyanupanwong.supasin.android.libraries.kits.ads.model.identifier.AdvertisingIdClient;
 
+import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+
+@RestrictTo(LIBRARY_GROUP)
 public interface AdsFactory {
 
     @NonNull
