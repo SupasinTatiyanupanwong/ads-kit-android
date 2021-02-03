@@ -35,8 +35,8 @@ Add the following to your Gradle build file:
 
 ```groovy
 dependencies {
-    implementation 'me.tatiyanupanwong.supasin.android.libraries.kits.ads:ads-google:1.0.0'
-    implementation 'me.tatiyanupanwong.supasin.android.libraries.kits.ads:ads-huawei:1.0.0'
+    implementation 'me.tatiyanupanwong.supasin.libraries.android.kits.ads:ads-google:1.0.0'
+    implementation 'me.tatiyanupanwong.supasin.libraries.android.kits.ads:ads-huawei:1.0.0'
 }
 ```
 
@@ -66,8 +66,8 @@ configurations {
 }
 
 dependencies {
-    google 'me.tatiyanupanwong.supasin.android.libraries.kits.ads:ads-google:1.0.0'
-    huawei 'me.tatiyanupanwong.supasin.android.libraries.kits.ads:ads-huawei:1.0.0'
+    google 'me.tatiyanupanwong.supasin.libraries.android.kits.ads:ads-google:1.0.0'
+    huawei 'me.tatiyanupanwong.supasin.libraries.android.kits.ads:ads-huawei:1.0.0'
 }
 ```
 

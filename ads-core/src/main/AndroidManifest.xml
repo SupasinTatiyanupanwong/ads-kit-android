@@ -16,7 +16,7 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.tatiyanupanwong.supasin.android.libraries.kits.ads">
+    package="me.tatiyanupanwong.supasin.libraries.android.kits.ads">
 
     <application>
 

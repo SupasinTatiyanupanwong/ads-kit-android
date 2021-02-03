@@ -16,7 +16,7 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.tatiyanupanwong.supasin.android.samples.kits.ads">
+    package="me.tatiyanupanwong.supasin.samples.android.kits.ads">
 
     <application
         android:allowBackup="false"

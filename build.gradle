@@ -22,7 +22,7 @@ ext {
     BINTARY_REPOSITORY = 'android.libraries.kits.ads'
     BINTARY_LICENSES = ["Apache-2.0"]
 
-    POM_GROUP_ID = 'me.tatiyanupanwong.supasin.android.libraries.kits.ads'
+    POM_GROUP_ID = 'me.tatiyanupanwong.supasin.libraries.android.kits.ads'
 
     POM_URL = 'https://github.com/SupasinTatiyanupanwong/ads-kit-android'
     POM_SCM_URL = 'https://github.com/SupasinTatiyanupanwong/ads-kit-android'

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId 'me.tatiyanupanwong.supasin.android.samples.kits.ads'
+        applicationId 'me.tatiyanupanwong.supasin.samples.android.kits.ads'
 
         minSdkVersion 19
         targetSdkVersion 29
