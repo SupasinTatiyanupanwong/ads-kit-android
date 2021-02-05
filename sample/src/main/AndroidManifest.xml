@@ -17,15 +17,15 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="me.tatiyanupanwong.supasin.samples.android.kits.ads">
 
     <application
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Ads Kit Sample"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        tools:ignore="MissingApplicationIcon">
 
         <activity android:name=".MainActivity">
             <intent-filter>
