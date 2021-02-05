@@ -12,14 +12,3 @@ android {
 dependencies {
     api 'androidx.annotation:annotation:1.1.0'
 }
-
-ext {
-    POM_ARTIFACT_ID = 'ads-core'
-
-    POM_NAME = 'Ads Kit (Core)'
-    POM_DESCRIPTION = 'Encapsulates Ads APIs for Android.'
-    POM_VERSION = '1.0.0'
-}
-
-apply from: rootProject.file("gradle/install.gradle")
-apply from: rootProject.file("gradle/bintray.gradle")
