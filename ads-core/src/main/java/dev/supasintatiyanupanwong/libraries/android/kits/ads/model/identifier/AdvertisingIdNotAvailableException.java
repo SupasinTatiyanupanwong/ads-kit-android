@@ -14,4 +14,15 @@
  * limitations under the License.
  */
 
-include ':sample', ':ads-core', ':ads-google', ':ads-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.ads.model.identifier;
+
+/**
+ * Indicates an Advertising ID is not available.
+ */
+public class AdvertisingIdNotAvailableException extends Exception {
+
+    public AdvertisingIdNotAvailableException(Throwable cause) {
+        super(cause);
+    }
+
+}

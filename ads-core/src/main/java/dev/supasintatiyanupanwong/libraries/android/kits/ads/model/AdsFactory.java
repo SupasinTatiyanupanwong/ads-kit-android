@@ -14,4 +14,20 @@
  * limitations under the License.
  */
 
-include ':sample', ':ads-core', ':ads-google', ':ads-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.ads.model;
+
+import android.content.Context;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+
+import dev.supasintatiyanupanwong.libraries.android.kits.ads.model.identifier.AdvertisingIdClient;
+
+import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+
+@RestrictTo(LIBRARY_GROUP)
+public interface AdsFactory {
+
+    @NonNull AdvertisingIdClient getAdvertisingIdClient(@NonNull Context context);
+
+}

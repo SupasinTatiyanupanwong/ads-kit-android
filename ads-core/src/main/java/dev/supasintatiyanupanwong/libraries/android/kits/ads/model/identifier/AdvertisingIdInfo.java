@@ -14,4 +14,21 @@
  * limitations under the License.
  */
 
-include ':sample', ':ads-core', ':ads-google', ':ads-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.ads.model.identifier;
+
+/**
+ * Advertising ID Information. Includes both the Advertising ID and the limit ad tracking setting.
+ */
+public interface AdvertisingIdInfo {
+
+    /**
+     * Retrieves the Advertising ID.
+     */
+    String getId();
+
+    /**
+     * Retrieves whether the user has set Limit Advertising Tracking.
+     */
+    boolean isLimitAdTrackingEnabled();
+
+}

@@ -14,32 +14,21 @@
  * limitations under the License.
  */
 
-rootProject.allprojects {
-    repositories {
-        maven { url 'https://developer.huawei.com/repo/' }
-    }
-}
+package dev.supasintatiyanupanwong.libraries.android.kits.ads.model.identifier;
 
-apply plugin: 'com.android.library'
-apply plugin: 'com.vanniktech.maven.publish'
+import androidx.annotation.NonNull;
+import androidx.annotation.WorkerThread;
 
-android {
-    compileSdkVersion 29
+/**
+ * Client for retrieving Advertising ID related info (the Advertising ID and LAT setting).
+ */
+public abstract class AdvertisingIdClient {
 
-    defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 29
-
-        consumerProguardFiles 'consumer-rules.pro'
-    }
+    /**
+     * Retrieves the user's advertising ID and limit ad tracking preference.
+     */
+    @WorkerThread // TODO allows main thread access by wrapping with tasks api in 1.0
+    public abstract @NonNull AdvertisingIdInfo getAdvertisingIdInfo()
+            throws AdvertisingIdNotAvailableException;
 
 }
-
-dependencies {
-    api project(':ads-core')
-
-    implementation 'com.huawei.hms:base:4.0.3.301'
-    implementation 'com.huawei.hms:ads-identifier:3.4.28.305'
-}
-
-tasks.withType(Javadoc).all { enabled = false }

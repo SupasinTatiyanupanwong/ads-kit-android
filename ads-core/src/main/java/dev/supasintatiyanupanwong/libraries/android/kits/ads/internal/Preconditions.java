@@ -14,4 +14,28 @@
  * limitations under the License.
  */
 
-include ':sample', ':ads-core', ':ads-google', ':ads-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.ads.internal;
+
+import android.os.Looper;
+
+import androidx.annotation.RestrictTo;
+
+import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+
+@RestrictTo(LIBRARY_GROUP)
+public final class Preconditions {
+
+    private Preconditions() {}
+
+    public static void checkNotMainThread() {
+        if (isMainThread()) {
+            throw new IllegalStateException("Must not be called on the main application thread");
+        }
+    }
+
+
+    private static boolean isMainThread() {
+        return Looper.getMainLooper() == Looper.myLooper();
+    }
+
+}

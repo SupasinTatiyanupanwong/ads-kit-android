@@ -18,7 +18,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="me.tatiyanupanwong.supasin.samples.android.kits.ads">
+    package="dev.supasintatiyanupanwong.samples.android.kits.ads">
 
     <application
         android:allowBackup="false"
